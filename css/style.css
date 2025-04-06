@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--Grey-900);
+  color: var(--White);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile-card {
+  background-color: var(--Grey-800);
+  padding: 30px;
+  border-radius: 10px;
+  width: 23rem;
+  margin-bottom: 10px;
+}
+
+.profile-card .profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.profile-card .profile-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.profile-card .profile-header h2 {
+  font-weight: 400;
+}
+
+.profile-card .profile-header .profile-location {
+  color: var(--Green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-card .profile-header p {
+  font-size: 0.9rem;
+}
+
+.social-links {
+  height: 100%;
+  font-weight: 600;
+}
+
+.social-links .social-link {
+  background-color: var(--Grey-700);
+  border-radius: 7px;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+  align-content: center;
+}
+
+.social-links .social-link:hover {
+  color: var(--Grey-900);
+  background-color: var(--Green);
+  cursor: pointer;
+}
+
+.profile-footer {
+  text-align: center;
+  font-size: 0.98rem;
+}
+
+.profile-footer a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-card {
+    width: 21rem;
+  }
+}
