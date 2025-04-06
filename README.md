@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [View live site](https://soft-madeleine-a3bb4c.netlify.app/)
 
 ## My process
 
